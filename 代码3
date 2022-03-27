@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+                background-image: url("../web/答题背景.png") ;
+				background-size: 100%;
+			}
+			.content{
+				height: 510px;
+				width: 40%;
+				margin-left: -50px;
+				margin-right: auto;
+				
+			}
+			.content-1{
+				width: 300px;
+				height: 50px;
+				line-height: 50px;
+				margin-left: 250px;
+			}
+			.content-1 span{
+				font-size: 18px;
+
+			}
+			.content-1 input{
+				width: 50px;
+                border-radius: 20px;
+                height: 20px; 
+                border: 2px solid #b6d7a8;
+			}
+			.footer{
+				width: 100%;
+				height: 40px;
+				margin-left: auto;
+				margin-right: auto;
+				/* border: red 1px solid; */
+			}
+			form{
+				width: 25%;
+				height: 20px;
+				/* border: red 1px solid; */
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 10px;
+				position: relative;
+			}
+			.footer input{
+				width: 60px;
+				background-color: rgb(248, 243, 236);
+				-webkit-border-radius: 28;
+				-moz-border-radius: 28;
+				border-radius: 28px;
+				border: 0cm;
+			}
+			#bt2{
+				position: absolute;
+				right: 0;
+			}
+            .header{
+                margin-top: 30px;
+                margin-left: 150px;
+                padding-left: 20px;
+                padding-bottom: 0cm;
+                color:azure;
+
+            }
+            span{
+                font-size: 30px;
+                padding-bottom: 0cm;
+            }
+            table{
+                margin-left: 180px;
+                width: 70%;
+            }
+			.s1{
+				width: 120px;
+				height: 30px;
+				font-size: medium;
+				background-color: azure;
+			}
+
+		</style>
+	</head>
+	<body>
+		<!-- 模式切换 -->
+		<select class="s1" onchange="window.location=this.value">
+			<option value="四则运算加减web.html">加减运算</option>
+			<option value="四则混合运算web.html" selected = "selected">四则混合运算</option>
+		</select>
+
+		<!-- 答题计时显示 -->
+		<div class="header">
+			<span>答题计时 </span>
+			<span id="id_M">00</span>
+			<span>:</span>
+			<span id="id_S">00</span>
+		</div>
+
+		<!-- 出题内容 -->
+        <table cellpadding="20" cellspacing="30" >
+         <tr>
+             <td>
+		         <div class="content">
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="content">
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+        
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                    <div class="content-1">
+                        <span class="sp">3 + 3 + 3 = </span>
+                        <input type="text" class="answer" value="" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </table>
+
+		<!-- 底部按钮 -->
+		<div class="footer">
+		<form action="" method="">
+			<input type="button" id="bt1" style="width: 100px;" value="交卷" />
+			<input type="button" id="bt2" style="width: 100px;" value="再来一次" />
+		</form>
+		</div>
+
+		<!-- JS脚本 -->
+		<script type="text/javascript">
+			var c = 0		// 计时变量
+			var timer = null
+			var oBt1 = document.getElementById("bt1")		// 交卷按钮
+			var oBt2 = document.getElementById("bt2")		// 再来一次按钮
+			var oContent = document.getElementsByClassName("sp")
+			var Answer = document.getElementsByClassName("answer")
+			var id_S = document.getElementById("id_S")
+			var id_M = document.getElementById("id_M")
+
+			//开始答题
+			window.onload =function(){
+				for(var i = 0;i < oContent.length;i++){
+					Answer[i].style.backgroundColor = "white";
+					Answer[i].value = " "
+					var add1 = parseInt(Math.random()*100)
+					var add2 = parseInt(Math.random()*100)
+					var add3 = parseInt(Math.random()*100)
+					var ope1 = Math.round(Math.random()*4)
+					var ope2 = Math.round(Math.random())
+					strs = oContent[i].innerHTML.split(" ")
+					if(ope1 == 0){
+						strs[1] = "+"
+					}
+					if(ope1 == 1){
+						strs[1] = "-"
+					}
+					if(ope1 == 2){
+						strs[1] = "x"
+					}
+					if(ope1 == 3){
+						strs[1] = "÷"
+					}
+
+					if(ope2 == 0){
+						strs[3] = "+"
+					}
+					if(ope2 == 1){
+						strs[3] = "-"
+					}
+					// console.log(oContent[i].innerText)
+					// console.log(strs)
+					strs[0] = add1
+					strs[2] = add2
+					strs[4] = add3
+					// console.log(strs)
+					oContent[i].innerText = strs[0]+" "+strs[1]+" "+strs[2]+" "+strs[3]+" "+strs[4]+" "+strs[5]
+				}
+			
+				// 开始计时
+				timer = setInterval(function() {
+				    c++;
+				    id_S.innerHTML = showNum(c % 60)
+				    id_M.innerHTML = showNum(parseInt(c / 60) % 60)
+				},1000)
+			}
+
+			// 提交答案功能实现
+			oBt1.onclick = function(){
+				document.getElementById("bt1").disabled="disabled";		//交卷后禁用交卷按钮
+				var count = 0
+				var score = 0
+				for(var i = 0;i < oContent.length;i++){
+					strs = oContent[i].innerHTML.split(" ")
+					Ans = Answer[i].value
+					// console.log(Ans)
+					var add1 = strs[0]
+					var operator1 = strs[1]
+					var add2 = strs[2]
+					var operator2 = strs[3]
+					var add3 = strs[4]
+					// console.log(strs)
+					// console.log(operator)
+					if(operator1 == "+"){
+						var a_1 = Number(add1) + Number(add2);
+						if(operator2 == "+") {							
+							a_1 = a_1 + Number(add3)
+						}
+						else if(operator2 == "-") {
+							a_1 = a_1 - Number(add3)
+						}
+						if(a_1 == Number(Ans)){
+							count++;
+						}else{
+							Answer[i].style.backgroundColor = "rgb(255,204,204)";
+							Answer[i].value=a_1;
+						}
+					}
+					if(operator1 == "-"){
+						var a_1 = Number(add1) - Number(add2);
+						if(operator2 == "+") {							
+							a_1 = a_1 + Number(add3)
+						}
+						else if(operator2 == "-") {
+							a_1 = a_1 - Number(add3)
+						}
+						if(a_1 == Number(Ans)){
+							count++;
+						}else{
+							Answer[i].style.backgroundColor = "rgb(255,204,204)";
+							Answer[i].value=a_1;
+						}
+					}
+					if(operator1 == "x"){
+						var a_1 = Number(add1) * Number(add2);
+						if(operator2 == "+") {							
+							a_1 = a_1 + Number(add3)
+						}
+						else if(operator2 == "-") {
+							a_1 = a_1 - Number(add3)
+						}
+						if(a_1 == Number(Ans)){
+							count++;
+						}else{
+							Answer[i].style.backgroundColor = "rgb(255,204,204)";
+							Answer[i].value=a_1;
+						}
+					}
+					if(operator1 == "÷"){
+						var a_1 = Number(add1) / Number(add2);
+						if(operator2 == "+") {							
+							a_1 = a_1 + Number(add3)
+						}
+						else if(operator2 == "-") {
+							a_1 = a_1 - Number(add3)
+						}
+						if(a_1.toFixed(2) == Number(Ans)){
+							count++;
+						}else{
+							Answer[i].style.backgroundColor = "rgb(255,204,204)";
+							Answer[i].value=a_1.toFixed(2);
+						}
+					}
+					
+				}
+				c = 0		//计时数据清零
+				Min = id_M.innerText
+				S = id_S.innerText
+				id_S.innerHTML = "00"
+				id_M.innerHTML = "00"
+
+				if(count<15)
+					alert("答对"+count+"题! 共计"+(count*5)+"分！"+"共用时"+Min+"分"+S+"秒 "+"再接再厉哦！")
+				else
+					alert("恭喜你答对"+count+"题! 共计"+(count*5)+"分！"+"共用时"+Min+"分"+S+"秒 "+"干得漂亮！")	
+			}
+			
+			// 再来一次按钮功能实现
+			oBt2.onclick = function(){
+				document.getElementById("bt1").removeAttribute("disabled");		//恢复交卷按钮
+				for(var i = 0;i < oContent.length;i++){
+					Answer[i].style.backgroundColor = "white";
+					Answer[i].value = " "
+					var add1 = parseInt(Math.random()*100)
+					var add2 = parseInt(Math.random()*100)
+					var add3 = parseInt(Math.random()*100)
+					var ope1 = Math.round(Math.random()*4)
+					var ope2 = Math.round(Math.random())
+					strs = oContent[i].innerHTML.split(" ")
+					if(ope1 == 0){
+						strs[1] = "+"
+					}
+					if(ope1 == 1){
+						strs[1] = "-"
+					}
+					if(ope1 == 2){
+						strs[1] = "x"
+					}
+					if(ope1 == 3){
+						strs[1] = "÷"
+					}
+					
+					if(ope2 == 0){
+						strs[3] = "+"
+					}
+					if(ope2 == 1){
+						strs[3] = "-"
+					}
+					// console.log(oContent[i].innerText)
+					// console.log(strs)
+					strs[0] = add1
+					strs[2] = add2
+					strs[4] = add3
+					// console.log(strs)
+					oContent[i].innerText = strs[0]+" "+strs[1]+" "+strs[2]+" "+strs[3]+" "+strs[4]+" "+strs[5]
+				}
+				//计时数据清零
+				c = 0
+				Min = id_M.innerText
+				S = id_S.innerText
+				id_S.innerHTML = "00"
+				id_M.innerHTML = "00"
+
+				timer = setInterval(function() {
+				    id_S.innerHTML = showNum(c % 60)
+				    id_M.innerHTML = showNum(parseInt(c / 60) % 60)
+				},1000)
+				
+			}
+
+			//处理数字显示
+			function showNum(num) {
+			    if (num < 10) {
+			        return '0' + num
+			    }
+			    return num
+			}
+		</script>
+	</body>
+</html>
+
