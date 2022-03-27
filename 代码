@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+			margin: 0;
+			padding: 0;
+            background-image: url("../web/首页.png") ;
+			background-size: 100%;
+			}
+        .input1{
+            width: 300px;
+            height: 300px;
+            margin-left: 300px;
+            margin-top: 300px;
+            font-size: 35px;
+			border-radius: 30%;
+            background-image: url(input1.png);
+            background-size: 100%;
+        } 
+        .input2{
+            width: 300px;
+            height: 300px;
+            margin-left: 375px;
+            margin-top: 300px;
+            font-size: 35px;
+			border-radius: 30%;
+            background-image: url(input2.png);
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <input class="input1" type="button" onclick=javascrtpt:jump1()>
+    <input class="input2" type="button" onclick=javascrtpt:jump2()>
+</body>
+<script>
+    function jump1(){
+        window.location.href="四则运算加减web.html";
+    }
+    function jump2(){
+        window.location.href="四则混合运算web.html";
+    }
+</script>
+</html>
